@@ -1,0 +1,72 @@
+[
+  {
+    "id": "TC-001",
+    "requirement": "ACCESS-001",
+    "type": "positive",
+    "steps": [
+      "Open the landing page",
+      "Click Enter Demo"
+    ],
+    "expected": "Dashboard opens without asking for credentials"
+  },
+  {
+    "id": "TC-002",
+    "requirement": "ACCESS-002",
+    "type": "negative",
+    "steps": [
+      "Enter the demo",
+      "Click Log out",
+      "Try to open the dashboard again"
+    ],
+    "expected": "User returns to the landing page and cannot access protected pages"
+  },
+  {
+    "id": "TC-003",
+    "requirement": "ACCOUNT-001",
+    "type": "positive",
+    "steps": [
+      "Enter the demo",
+      "Review checking and savings accounts"
+    ],
+    "expected": "Both accounts show masked identifiers and USD balances with two decimal places"
+  },
+  {
+    "id": "TC-004",
+    "requirement": "TRANSFER-001",
+    "type": "positive",
+    "steps": [
+      "Record both account balances",
+      "Make a valid transfer between checking and savings",
+      "Review balances and transaction history"
+    ],
+    "expected": "Source decreases, destination increases equally, and one completed transaction appears"
+  },
+  {
+    "id": "TC-005",
+    "requirement": "TRANSFER-002",
+    "type": "negative",
+    "steps": [
+      "Try a zero, negative, invalid, same-account, or insufficient-funds transfer"
+    ],
+    "expected": "Transfer is rejected and balances and history remain unchanged"
+  },
+  {
+    "id": "TC-006",
+    "requirement": "HISTORY-001",
+    "type": "positive",
+    "steps": [
+      "Open transaction history",
+      "Apply account, type, status, and date filters"
+    ],
+    "expected": "Every displayed transaction matches all selected filters"
+  },
+  {
+    "id": "TC-007",
+    "requirement": "PROFILE-001",
+    "type": "positive",
+    "steps": [
+      "Open the profile view"
+    ],
+    "expected": "Only synthetic customer information is displayed; secrets and full account numbers are hidden"
+  }
+]
