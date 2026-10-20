@@ -1,0 +1,35 @@
+{
+  "project": "CDF Agentic QA Hackathon",
+  "target_application": "DemoBank",
+  "specification": "../test-website/PRD.md",
+  "requirements": [
+    {
+      "id": "ACCESS-001",
+      "description": "Enter Demo opens the dashboard without requiring credentials."
+    },
+    {
+      "id": "ACCESS-002",
+      "description": "Logging out returns the user to the landing page and prevents protected access."
+    },
+    {
+      "id": "ACCOUNT-001",
+      "description": "Checking and savings accounts show masked identifiers and USD balances to two decimal places."
+    },
+    {
+      "id": "TRANSFER-001",
+      "description": "Valid transfers update both account balances atomically and create a completed transaction."
+    },
+    {
+      "id": "TRANSFER-002",
+      "description": "Invalid transfers are rejected without changing balances or creating transactions."
+    },
+    {
+      "id": "HISTORY-001",
+      "description": "Transaction filters correctly apply account, type, status, and inclusive date ranges."
+    },
+    {
+      "id": "PROFILE-001",
+      "description": "Profile displays only synthetic customer details and does not expose secrets or full account identifiers."
+    }
+  ]
+}
