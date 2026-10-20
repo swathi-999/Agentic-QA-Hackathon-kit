@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+.env
+*.pyc
+*.log
+qa-report.json
+landing-page.png
+dashboard-page.png
