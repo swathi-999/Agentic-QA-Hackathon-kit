@@ -1,0 +1,20 @@
+{
+  "target_url": "http://localhost:5173",
+  "results": [
+    {
+      "id": "ACCESS-001",
+      "status": "passed",
+      "evidence": "Enter Demo button is visible."
+    },
+    {
+      "id": "ACCOUNT-001",
+      "status": "passed",
+      "evidence": "Demo dashboard opened successfully."
+    },
+    {
+      "id": "ACCESS-002",
+      "status": "passed",
+      "evidence": "Log out control is visible."
+    }
+  ]
+}
